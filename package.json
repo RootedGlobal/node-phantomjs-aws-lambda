@@ -1,0 +1,34 @@
+{
+  "name": "node-phantomjs-lambda-template",
+  "version": "0.0.1",
+  "description": "The bare minimum for a phantomjs app running on Amazon Lambda.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/narainsagar/node-phantomjs-lambda-template.git"
+  },
+  "author": "Narain Sagar",
+  "license": "isc",
+  "bugs": {
+    "url": "https://github.com/narainsagar/node-phantomjs-lambda-template/issues"
+  },
+  "homepage": "https://github.com/narainsagar/node-phantomjs-lambda-template",
+  "dependencies": {},
+  "devDependencies": {
+    "aws-sdk": "^2.1.39",
+    "node-lambda": "^0.6.1",
+    "phantomjs": "^1.9.17",
+    "mocha": "^2.3.2"
+  },
+  "scripts": {
+    "setup": "node-lambda setup",
+    "start": "node-lambda run",
+    "deploy": "node-lambda deploy",
+    "test": "mocha test/*"
+  },
+  "keywords": [
+    "phantomjs",
+    "aws",
+    "lambda"
+  ]
+}
